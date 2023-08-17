@@ -1,0 +1,57 @@
+
+<div class="container-fluid mt-5">
+    <ul class="nav nav-tabs gap-sm" id="myTabs">
+        <li class="nav-item">
+            <a class="nav-link active" id="tab1" data-toggle="tab" href="#content1">Front-end Developer </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="tab2" data-toggle="tab" href="#content2">Backend Developer</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="tab3" data-toggle="tab" href="#content3">.NET Developer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " id="tab4" data-toggle="tab" href="#content4">Grapic Designer</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" id="tab5" data-toggle="tab" href="#content5">SEO Expert</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" id="tab6" data-toggle="tab" href="#content6">Digital Marketing</a>
+      </li>
+    </ul>
+
+    <div class="tab-content mt-3">
+        <div id="content1" class="tab-pane fade show active">
+          <div class="d-flex gap-sm">
+            <div class="card" *ngFor="let x of newdata">
+              <app-card title="{{x.title}}"  detail="{{x.detail}}" jobdetail="{{x.jobdetail}}" experience="{{x.experience}}" dateofpost="{{x.date}}" > 
+                <h5 class="fw-bold">Job Description</h5>
+                {{x.details}}
+              </app-card>
+            </div>
+          </div>
+        </div>
+        <div id="content2" class="tab-pane fade">
+          <div class="d-flex gap-sm">
+            <div class="card" *ngFor="let n of olddata">
+              <app-card title="{{n.title}}" detail="{{n.detail}}" jobdetail="{{n.jobdetail}}" experience="{{n.experience}}" dateofpost="{{n.date}}" > 
+                <h5 class="fw-bold">Job Description</h5>
+                {{n.details}}
+              </app-card>
+            </div>
+          </div>
+        </div>
+        <div id="content3" class="tab-pane fade">
+          <div class="d-flex gap-sm">
+            <div class="card" *ngFor="let x of newdata">
+              <app-card title="{{x.title}}" detail="{{x.detail}}" jobdetail="{{x.jobdetail}}" experience="{{x.experience}}" dateofpost="{{x.date}}" > 
+                <h5 class="fw-bold">Job Description</h5>
+                {{x.details}}
+              </app-card>
+            </div>
+          </div>
+        </div>
+    </div>
+
+

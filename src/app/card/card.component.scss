@@ -1,0 +1,13 @@
+.card-title{
+    font-weight: 500;
+    width: 180px;
+}
+.card-text, .card-title{
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card{
+    border: 1px solid rgba(13, 110, 253, 1);
+       
+}

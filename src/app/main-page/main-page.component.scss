@@ -1,0 +1,19 @@
+.gap-sm{
+    gap: 20px;
+}
+.nav-item{
+    border: none;
+    border-radius: 60px;
+    border: 1px solid blue;
+    a{
+        color: blue;
+    }
+    .nav-link{
+        &.active{
+            border: none;
+            background-color: blue;
+            color: white;
+            border-radius: 60px;
+        }
+    }
+}

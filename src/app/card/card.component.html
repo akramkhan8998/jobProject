@@ -1,0 +1,42 @@
+<div class="card">
+    <div class="card-body pb-0">
+        <div class="d-flex justify-content-between">
+            <div class="left-dev d-flex align-items-center gap-sm">
+                <div class="logo">
+                    <img src="../../assets/img/Ellipse 1.svg" alt="" class="w-100">
+                </div>
+                <div class="title">
+                    <h4 class="card-title ms-2 mb-0"> {{title}}</h4>
+                </div>
+            </div>
+            <div class="left-box">
+                <img src="../../assets/img/New badge.svg" alt="">
+            </div>
+        </div>
+        <div class="row mt-3 ">
+            <div class="col-md-6">
+                <div>
+                    <h6 class="fw-bolder">
+                        Job Title
+                    </h6>
+                    <p>{{jobdetail}}</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <h6 class="fw-bolder">
+                        Experience
+                    </h6>
+                    <p >{{experience}}</p>
+                </div>
+            </div>
+        </div>
+        <p class="card-text  pt-0">
+            <ng-content></ng-content>
+        </p>
+        <div class="d-flex justify-content-between mt-1">
+            <p class="text-secondary">{{dateofpost}}</p>
+            <a href="" class="nav-link text-dark fw-bold pb-2"><span >Apply now</span></a>
+        </div>
+    </div>
+  </div>
